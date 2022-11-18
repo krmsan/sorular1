@@ -9,11 +9,14 @@ public class S02_7ileBolunenSayilar {
         Scan obj=new Scan();
         int a=obj.sayiAl();//123
         String s="";
+        int top=0;
         for (int i = 1; i <=a ; i++) {
             if (i%7==0){
                 s+=" "+i;
+                top+=i;
             }
         }
         System.out.println(s);// 7 14 21 28 35 42 49 56 63 70 77 84 91 98 105 112 119
+        System.out.println(top);//1071
     }
 }
