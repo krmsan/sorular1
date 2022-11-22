@@ -2,16 +2,14 @@ package sorular_8_ForLoops;
 
 import sorular_0ScannerCagirma.Scan;
 
-public class S05_FattoriyelHesapla {
+public class S05_FaktoriyelHesapla {
     //Soru 5- Kullanicidan 20’den kucuk bir sayi alip, bu sayinin faktoryel degerini
     //hesaplayin.
     public static void main(String[] args) {
-        System.out.println("sonuc = " + fakatoriyel());
+        System.out.println("sonuc = " + faktoriyel());
     }
-    public static void x(){
-        int sonuc =10;
-    }
-    public static int fakatoriyel(){
+
+    public static int faktoriyel(){
         Scan obj=new Scan();
         int sayiAl = obj.sayiAl();
         int sonuc=1;
@@ -22,12 +20,9 @@ public class S05_FattoriyelHesapla {
             }
         }else {
             System.out.println("sayı 20 den kucuk olsun");
-           sonuc= fakatoriyel();
+           sonuc= faktoriyel();
         }
-
         //System.out.println(sayiAl+"'in faktoriyeli : "+faktoriyel);
-
-
         return sonuc;
     }
 }
