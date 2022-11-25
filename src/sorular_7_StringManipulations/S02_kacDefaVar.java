@@ -36,7 +36,7 @@ public class S02_kacDefaVar {
  */
 
         List<Integer> listem = new ArrayList<>();
-
+/*
         int sayac = 0;
         System.out.println("str.length() = " + str.length());//15
         for (int i = 0; i <= str.lastIndexOf(aranan); i++) {
@@ -49,9 +49,59 @@ public class S02_kacDefaVar {
 
             sayac++;
         }
-        System.out.println("listem = " + listem);
-        System.out.println("sayac = " + sayac);
 
+ */
+/*
+        for (int i = 0; i < str.length(); i++) {
+            if (str.indexOf(aranan)==i){
+                listem.add(i);
+            }else {
+                i=str.indexOf(aranan,i);
+                if (i==-1)break;
+                listem.add(i);
+            }
+
+        }
+
+ */
+/*
+        for (int i = 0; i < str.length(); i++) {
+
+            if (str.indexOf(aranan, i) >= i) {
+                listem.add(str.indexOf(aranan, i));
+                i = str.indexOf(aranan, i);
+            } else break;
+
+        }
+
+ */
+/*
+        for (int i = 0; i < str.length(); i++) {
+            int a=str.indexOf(aranan,i);
+            if (a != -1) {             //if (a >= i)
+                listem.add(a);
+                i = a;
+            } else break;
+
+        }
+
+ */
+/*
+        for (int i = 0; i < str.length(); i++) {
+            int a = str.indexOf(aranan, i);
+            if (a == -1) break;
+            listem.add(a);
+            i = a;
+        }
+
+ */
+
+        for (int i = 0; i < str.lastIndexOf(aranan); i++) {
+            listem.add(str.indexOf(aranan, i));
+            i = str.indexOf(aranan, i);
+        }
+        System.out.println("listem = " + listem);
+        //  System.out.println("sayac = " + sayac);
     }
 
 
