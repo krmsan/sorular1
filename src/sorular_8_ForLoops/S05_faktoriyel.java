@@ -18,7 +18,7 @@ public class S05_faktoriyel {
             }
         }else {
             System.out.println("sayı 20 den kucuk olsun");
-            sonuc= faktoriyel();
+            faktoriyel();
         }
         System.out.println(sayiAl+"'in faktoriyeli : "+sonuc);
 
