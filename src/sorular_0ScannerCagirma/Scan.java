@@ -2,7 +2,7 @@ package sorular_0ScannerCagirma;
 
 import java.util.Scanner;
 
-public class Scan {
+ public class Scan {
 
 
     public int rakamAl(){
