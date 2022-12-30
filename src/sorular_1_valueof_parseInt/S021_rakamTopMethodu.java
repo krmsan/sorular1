@@ -9,7 +9,7 @@ public class S021_rakamTopMethodu {
     }
 
     public static int rakamlariTopla(int sayi) {
-        sayi = 123;
+        // sayi = 123; eger bu olursa herzaman 6 doner
 
         String str = "" + sayi;
 
