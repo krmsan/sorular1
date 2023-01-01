@@ -19,16 +19,16 @@ public class S022_RT_Math {
         System.out.println(top);
 
         //=======================YADA===============
-         sayi = 1234567;
+        sayi = 1234567;
         top = 0;
-         sayistr = "" + sayi;
+        sayistr = "" + sayi;
         sayilar = new int[sayistr.length()];
 
-            for (int j = 0; j < sayistr.length(); j++) {
-                sayilar[j] += sayi % 10;
-                sayi = sayi / 10;
-                top += sayilar[j];
-            }
+        for (int j = 0; j < sayistr.length(); j++) {
+            sayilar[j] += sayi % 10;
+            sayi = sayi / 10;
+            top += sayilar[j];
+        }
         System.out.println(top);
         //=======================YADA===============
 
@@ -37,11 +37,25 @@ public class S022_RT_Math {
         top = 0;
         sayistr = "" + sayi;
         for (int j = 0; j < sayistr.length(); j++) {
-            top+= sayi % 10;
+            top += sayi % 10;
             sayi = sayi / 10;
         }
         System.out.println(top);
         //=======================YADA===============
+
+        sayi = 1234567;
+        top = 0;
+        while (sayi >= 1) {
+            top += sayi % 10;
+            sayi = sayi / 10;
+        }
+        System.out.println(top);
+
+
+
+
+
+
 
 
 
